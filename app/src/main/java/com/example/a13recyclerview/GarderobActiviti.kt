@@ -63,6 +63,7 @@ class GarderobActiviti : AppCompatActivity() {
 
 
         //Запускае менеджер
+        recyclerViewRV = findViewById(R.id.recyclerViewRV)
         recyclerViewRV.layoutManager = LinearLayoutManager(this)
         recyclerViewRV.adapter = MyAdapter(garderobVal)
 
