@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        
+
     }
 
     //Инициализация Меню

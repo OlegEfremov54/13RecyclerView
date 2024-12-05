@@ -12,7 +12,7 @@ class MyAdapter(val garderob: MutableList<Garderob>) :
     class GarderobViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nameTV: TextView = itemView.findViewById(R.id.nameTV)
         val descriptionTV: TextView = itemView.findViewById(R.id.descriptionTV)
-        val imageIV: ImageView = itemView.findViewById(R.id.imageClothesIV)
+        val imageIV: ImageView = itemView.findViewById(R.id.imageGarderobIV)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GarderobViewHolder {
@@ -24,9 +24,9 @@ class MyAdapter(val garderob: MutableList<Garderob>) :
     override fun getItemCount() = garderob.size
 
     override fun onBindViewHolder(holder: GarderobViewHolder, position: Int) {
-        val clothes = garderob[position]
-        holder.nameTV.text = clothes.name
-        holder.descriptionTV.text = clothes.description
-        holder.imageIV.setImageResource(clothes.image)
+        val garderobs = garderob[position]
+        holder.nameTV.text = garderobs.name
+        holder.descriptionTV.text = garderobs.description
+        holder.imageIV.setImageResource(garderobs.image)
     }
 }

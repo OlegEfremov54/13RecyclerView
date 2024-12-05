@@ -11,10 +11,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageClothesIV"
+            android:id="@+id/imageGarderobIV"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:contentDescription="@string/image_clothes"
+            android:contentDescription="@string/image_gard"
             android:src="@drawable/baseline_dry_cleaning_24"/>
 
         <LinearLayout
